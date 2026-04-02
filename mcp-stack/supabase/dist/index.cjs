@@ -1,0 +1,2 @@
+"use strict";Object.defineProperty(exports, "__esModule", {value: true});var _chunkTA5ETGX7cjs = require('./chunk-TA5ETGX7.cjs');var _chunkA5V4CFB4cjs = require('./chunk-A5V4CFB4.cjs');require('./chunk-SQUGJ45N.cjs');var t=_chunkA5V4CFB4cjs.a.version;exports.CURRENT_FEATURE_GROUPS = _chunkTA5ETGX7cjs.a; exports.createSupabaseMcpServer = _chunkTA5ETGX7cjs.b; exports.version = t;
+//# sourceMappingURL=index.cjs.map

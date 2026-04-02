@@ -1,0 +1,214 @@
+[
+  {
+    "name": "__cf_bm",
+    "value": "et0PQeSKOxPTOyJ1XNX02hE1uYIREQirYoe.Qs6TzuE-1771495097-1.0.1.1-PTXhKTrAHDs1wpk6sRnhg7rLlhdANMdP8X0BbA61vhE0QHtHWC0_TJH42RQ0FPRMQOR9Lxl5jpxFJDfT45ATNeLuE4Jf58IEWd5HKaFKw0o",
+    "domain": ".indeed.com",
+    "path": "/",
+    "expires": 1771496897.102089,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "_cfuvid",
+    "value": "VOD2f8IAh_MP8BFwKd3TPpG.bV0LbcOzqhGUSJoG1ls-1771495097420-0.0.1.1-604800000",
+    "domain": ".indeed.com",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "CTK",
+    "value": "1jhqlc6algmj6801",
+    "domain": ".indeed.com",
+    "path": "/",
+    "expires": 1806055110.982209,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "CSRF",
+    "value": "kpfEDxkjh1Lybm5UU23jhIgetHuhW0zo",
+    "domain": ".indeed.com",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "INDEED_CSRF_TOKEN",
+    "value": "ef7EE7NKGQSg1Kb0xJHqKYqFwWsYE6fa",
+    "domain": "www.indeed.com",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "LV",
+    "value": "LA=1771495102:CV=1771495102:TS=1771495102",
+    "domain": "www.indeed.com",
+    "path": "/",
+    "expires": 1806055111.7869,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "indeed_rcc",
+    "value": "LV",
+    "domain": "www.indeed.com",
+    "path": "/",
+    "expires": 1806055111.786634,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "cf_clearance",
+    "value": "_KmL0n3sSRkIW4jUhSQ47CNO6Y96hgSKIcd1eBzWrOo-1771495106-1.2.1.1-RdJ.2au6sGFcDrc2CkmtdnWa8xCVjczC1BaLxsAhMY.wCldPcdNdvU.aBz3uCUAFx2kVOFz6NmgME4XJXgTwxISwevbD58B4qthX.v.h3dINmnULeiMv7r1miOm.KcLJVN29gD.pskqe9oCrcQq6fdqgfqSRRwaJiNZd7_8GE77anw6syUlpxFFvQqyMzXWlCJ_Wps7j7Pwo.NMkiFVcFyoGZe_9E5bc1uzsuwVoixQ",
+    "domain": ".indeed.com",
+    "path": "/",
+    "expires": 1803031106.366807,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "None",
+    "partitionKey": "https://indeed.com",
+    "_crHasCrossSiteAncestor": false
+  },
+  {
+    "name": "_sp_ses.27f6",
+    "value": "*",
+    "domain": ".indeed.com",
+    "path": "/",
+    "expires": 1771496911,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "_sp_id.27f6",
+    "value": "f2aa9f85-f9a4-4221-919e-085edc4a5f9d.1771495111.1.1771495111..8b88425e-a8d8-4f34-b0b6-db87f4efd2e6..897c0c1c-ba78-4d5f-b0d5-6caaa14804be.1771495111300.1",
+    "domain": ".indeed.com",
+    "path": "/",
+    "expires": 1806055111.624871,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "_ga_LYNT3BTHPG",
+    "value": "GS2.1.s1771495112$o1$g0$t1771495112$j60$l0$h1027455922",
+    "domain": ".indeed.com",
+    "path": "/",
+    "expires": 1806055113.605694,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "_ga",
+    "value": "GA1.1.1728906888.1771495114",
+    "domain": ".indeed.com",
+    "path": "/",
+    "expires": 1806055113.606948,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "FPID",
+    "value": "FPID2.2.dVGMGfoGnU5uah8aIbmBn6mpIniNyUYMyZ3MOPiBp9g%3D.1771495114",
+    "domain": ".indeed.com",
+    "path": "/",
+    "expires": 1806055113.781899,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "FPLC",
+    "value": "u3LpLHDAr2XpVF4iUsAQiHKEXt4oZJCsAVl9018pzYiTNFevWSvo7wKiVxN0T%2BEus8mwkhVuLuFM4RU8ggKpCqJ%2B30vwamwf272b00sFxNMnT45NkrCyinF7mfXJKg%3D%3D",
+    "domain": ".indeed.com",
+    "path": "/",
+    "expires": 1771567113.78204,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "_MAGUA_PgVsts",
+    "value": "1",
+    "domain": "www.indeed.com",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "_MAGUA_SprssG1T",
+    "value": "1",
+    "domain": "www.indeed.com",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "_MAGUA_SsnShwnCnt",
+    "value": "1",
+    "domain": "www.indeed.com",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "_MAGUA_MnthShwnCnt",
+    "value": "1",
+    "domain": "www.indeed.com",
+    "path": "/",
+    "expires": 1774087115,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "__cf_bm",
+    "value": "RvrgpfoYg9MmS8BnzidC0rprk3ZoGMwF919I4mZa2v4-1771495115-1.0.1.1-pYLxwrqIkzRu7jHiQvf1TKA2RQO.2P9oHAY.mijxKBhlzvnM8vW1T9n_qFZC7XLUGItEUrsjvH7ee5y.tJkMLbGXtXesPWrNokZlZQYP.HU",
+    "domain": ".sgtm.indeed.com",
+    "path": "/",
+    "expires": 1771496915.539706,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "__cf_bm",
+    "value": "yzYHCZw.7XkR7MvBpzGxdhLvTP1P4AjyICzJsfbbhe8-1771495115-1.0.1.1-zsAHHVVlDKNkItFQTWVHzCljHq_uo6TcETetRPt847YZAM6nfKghpDHPbBUj_SDJXh5FyOBUh2X82gC6h.TBKnVcP0ncF.thNbWn6rflhFg",
+    "domain": ".t.indeed.com",
+    "path": "/",
+    "expires": 1771496915.886084,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "JSESSIONID",
+    "value": "node01nwoke275io8kyjnnleh4lb9u12027332.node0",
+    "domain": "www.indeed.com",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "Lax"
+  }
+]

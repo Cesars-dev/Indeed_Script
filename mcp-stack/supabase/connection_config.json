@@ -1,0 +1,68 @@
+{
+    "mcpServers": {
+        "supabase_indeed": {
+            "command": "node",
+            "args": [
+                "/home/julio/projects/Indeed_Script/mcp-stack/supabase/dist/transports/stdio.js",
+                "--project-ref",
+                "uckkgnqlehprbpypcgjc"
+            ],
+            "env": {
+                "SUPABASE_ACCESS_TOKEN": "${SUPABASE_ACCESS_TOKEN}"
+            },
+            "tools": {
+                "execute_sql": {
+                    "description": "Run SELECT/INSERT/UPDATE/DELETE queries against the Indeed Auto-Apply database (public schema)",
+                    "arguments": {
+                        "query": "SQL query string. Tables are in the public schema (no prefix needed)."
+                    },
+                    "examples": [
+                        "SELECT * FROM adspower_profiles ORDER BY slot ASC;",
+                        "SELECT * FROM applied_jobs WHERE status = 'success' LIMIT 10;",
+                        "SELECT * FROM executions ORDER BY ts DESC LIMIT 5;",
+                        "SELECT * FROM search_combinations WHERE active = true;",
+                        "UPDATE adspower_profiles SET cookie_status = 'active' WHERE user_id = 'k19td50a';"
+                    ]
+                },
+                "apply_migration": {
+                    "description": "Run DDL (CREATE/ALTER/DROP). Name MUST be globally unique — use timestamps.",
+                    "arguments": {
+                        "name": "Unique migration name (e.g. add_column_20260313). NEVER reuse.",
+                        "query": "SQL DDL string. Always end with: NOTIFY pgrst, 'reload schema';"
+                    },
+                    "examples": [
+                        "ALTER TABLE adspower_profiles ADD COLUMN IF NOT EXISTS my_col TEXT DEFAULT ''; NOTIFY pgrst, 'reload schema';"
+                    ]
+                },
+                "list_tables": {
+                    "description": "List all tables with columns, types, and row counts.",
+                    "arguments": {
+                        "schemas": [
+                            "public"
+                        ]
+                    }
+                },
+                "list_migrations": {
+                    "description": "List all applied migrations.",
+                    "arguments": {}
+                }
+            },
+            "response_parsing": {
+                "note": "execute_sql wraps results in XML tags. Parse with:",
+                "pattern": "Unescape (\\n → newline, \\\" → quote), then find first [ to last ] and JSON.parse",
+                "example_response": "Below is the result... <untrusted-data-UUID>[{\"col\":\"val\"}]</untrusted-data-UUID>..."
+            },
+            "schema": "public",
+            "project_ref": "uckkgnqlehprbpypcgjc",
+            "tables": {
+                "adspower_profiles": "19 AdsPower browser profiles — user_id, email, proxy, cookie_status, applicant data",
+                "applied_jobs": "Dedup log — job_id (PK), status, company, title, account_id",
+                "executions": "Full pipeline execution tracking — 1 row per apply_to_job call",
+                "test_run_logs": "Dev/batch test run results",
+                "search_combinations": "10 keyword × state combos for daily N8N scrape",
+                "proxies": "100 Webshare US residential SOCKS5 proxies — assigned_to = user_id",
+                "gmail_accounts": "23 Gmail accounts — email, password, adspower_user_id, status"
+            }
+        }
+    }
+}

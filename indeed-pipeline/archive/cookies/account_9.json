@@ -1,0 +1,98 @@
+[
+  {
+    "name": "__cf_bm",
+    "value": "Ott3pVtnRvb.XjrBp4hNXZ8LGLj3kxjASB4MM86Lo_s-1771546062-1.0.1.1-1ClfC7EHpjINRX3QoIJhffGhlo4WkuzBbQYkpnWMkdkULy2z7jNjJx0YnErFIZjnMRojFbSt17MeEucUG0p.jIN5FqdNbTin0PL.S7y9nug",
+    "domain": ".indeed.com",
+    "path": "/",
+    "expires": 1771547862.888834,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "cf_chl_rc_ni",
+    "value": "1",
+    "domain": "www.indeed.com",
+    "path": "/",
+    "expires": 1771549665,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "None",
+    "partitionKey": "https://indeed.com",
+    "_crHasCrossSiteAncestor": false
+  },
+  {
+    "name": "LANG",
+    "value": "en_US",
+    "domain": "secure.indeed.com",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "CTK",
+    "value": "1jhs5vl5qg36j802",
+    "domain": ".indeed.com",
+    "path": "/",
+    "expires": 1806106072.239308,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "SURF",
+    "value": "fB5tXAMIjnme2BFseunuc0tSIBnvgC8U",
+    "domain": ".indeed.com",
+    "path": "/",
+    "expires": 1772150874.853963,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "__cflb",
+    "value": "0H28v9ueys8DmBCU6W2QsvRS7eiaVNgnqJ86f2k1doz",
+    "domain": "secure.indeed.com",
+    "path": "/",
+    "expires": 1771628872.239789,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "cf_chl_rc_ni",
+    "value": "1",
+    "domain": "secure.indeed.com",
+    "path": "/",
+    "expires": 1771549675,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "None",
+    "partitionKey": "https://indeed.com",
+    "_crHasCrossSiteAncestor": false
+  },
+  {
+    "name": "cf_chl_rc_ni",
+    "value": "1",
+    "domain": "indeed.com",
+    "path": "/",
+    "expires": 1771549678,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "None",
+    "partitionKey": "https://indeed.com",
+    "_crHasCrossSiteAncestor": false
+  },
+  {
+    "name": "__cf_bm",
+    "value": "WbHsBKDkqTl3dp1JELhK9gLjN.btJLaelNfWU7U4VJw-1771546081-1.0.1.1-ksasHCQid0pm2BWen3BOr4_9bFzV7tZiCT2lO4Ic6zNV1GxZl6_u1DeTSrEXg.hX0kgXni5pufiZ4Nu.4qyVhvWt4JmPo0ZUswXIZqTAbQ8",
+    "domain": ".t.indeed.com",
+    "path": "/",
+    "expires": 1771547881.564272,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "None"
+  }
+]

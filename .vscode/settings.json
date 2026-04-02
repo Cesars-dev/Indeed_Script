@@ -1,0 +1,5 @@
+{
+  "python.terminal.useEnvFile": false,
+  "python.defaultInterpreterPath": "/home/julio/projects/Indeed_Script/indeed-pipeline/venv_local/bin/python3.13",
+  "python.pythonPath": "/home/julio/projects/Indeed_Script/indeed-pipeline/venv_local/bin/python3.13"
+}

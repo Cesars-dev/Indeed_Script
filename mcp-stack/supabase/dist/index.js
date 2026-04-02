@@ -1,0 +1,2 @@
+import{a as o,b as p}from"./chunk-J73MHSXF.js";import{a as e}from"./chunk-WJNHYGQT.js";import"./chunk-LH7KKQM2.js";var t=e.version;export{o as CURRENT_FEATURE_GROUPS,p as createSupabaseMcpServer,t as version};
+//# sourceMappingURL=index.js.map

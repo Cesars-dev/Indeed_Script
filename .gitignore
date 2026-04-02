@@ -1,0 +1,44 @@
+# =============================================================================
+# .gitignore — Indeed Auto-Apply Pipeline (workspace root)
+# =============================================================================
+
+# ── Credentials (NEVER commit) ───────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+indeed-pipeline/.env
+indeed-pipeline/config/google_service_account.json
+indeed-pipeline/config/accounts.json
+indeed-pipeline/config/cookies/
+mcp.json
+indeed-pipeline/mcp.json
+mcp-stack/google/*.json
+
+# ── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+venv_local/
+*.egg-info/
+
+# ── Node ─────────────────────────────────────────────────────────────────────
+node_modules/
+npm-debug.log*
+
+# ── macOS ────────────────────────────────────────────────────────────────────
+.DS_Store
+*.swp
+
+# ── Playwright / debug artifacts ─────────────────────────────────────────────
+/tmp/playwright_debug/
+playwright-report/
+test-results/
+
+# ── Logs ────────────────────────────────────────────────────────────────────
+*.log
+logs/
+
+# VPS infra scripts with local paths
+vps_folder/tunnel_env.sh

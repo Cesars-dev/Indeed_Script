@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@playwright/mcp": "^0.0.68",
+    "@supabase/mcp-server-supabase": "^0.6.3"
+  }
+}

@@ -1,0 +1,67 @@
+{
+    "mcpServers": {
+        "supabase_linkedin": {
+            "command": "node",
+            "args": [
+                "/home/julio/projects/LinkedIN_job_hunter/mcp-server-supabase/dist/transports/stdio.js",
+                "--project-ref",
+                "rvjuymgbarospuwkkxhc"
+            ],
+            "env": {
+                "SUPABASE_ACCESS_TOKEN": "${SUPABASE_ACCESS_TOKEN}"
+            },
+            "tools": {
+                "execute_sql": {
+                    "description": "Run SELECT/INSERT/UPDATE/DELETE queries against linkedin_hunter schema",
+                    "arguments": {
+                        "query": "SQL query string. Always prefix tables with linkedin_hunter. schema."
+                    },
+                    "examples": [
+                        "SELECT * FROM linkedin_hunter.qualified_leads ORDER BY created_at DESC LIMIT 5;",
+                        "SELECT full_name, work_email, icp_score FROM linkedin_hunter.qualified_leads WHERE icp_score >= 7;",
+                        "SELECT count(*) FROM linkedin_hunter.discovery_evaluations;",
+                        "UPDATE linkedin_hunter.qualified_leads SET outreach_status = 'sent' WHERE linkedin_url = 'https://...';"
+                    ]
+                },
+                "apply_migration": {
+                    "description": "Run DDL (CREATE/ALTER/DROP). Name MUST be globally unique — use timestamps.",
+                    "arguments": {
+                        "name": "Unique migration name (e.g. add_column_20260305). NEVER reuse.",
+                        "query": "SQL DDL string. Always end with: NOTIFY pgrst, 'reload schema';"
+                    },
+                    "examples": [
+                        "ALTER TABLE linkedin_hunter.qualified_leads ADD COLUMN IF NOT EXISTS my_col TEXT DEFAULT ''; NOTIFY pgrst, 'reload schema';"
+                    ]
+                },
+                "list_tables": {
+                    "description": "List all tables with columns, types, and row counts in a schema.",
+                    "arguments": {
+                        "schemas": [
+                            "linkedin_hunter"
+                        ]
+                    }
+                },
+                "list_migrations": {
+                    "description": "List all applied migrations.",
+                    "arguments": {}
+                }
+            },
+            "response_parsing": {
+                "note": "execute_sql wraps results in XML tags. Parse with:",
+                "pattern": "Unescape (\\n → newline, \\\" → quote), then find first [ to last ] and JSON.parse",
+                "example_response": "Below is the result... <untrusted-data-UUID>[{\"col\":\"val\"}]</untrusted-data-UUID>..."
+            },
+            "schema": "linkedin_hunter",
+            "project_ref": "rvjuymgbarospuwkkxhc",
+            "tables": {
+                "qualified_leads": "Final enriched leads — upsert on linkedin_url",
+                "discovery_evaluations": "ICP gate audit trail — upsert on linkedin_url",
+                "raw_job_postings": "Phase 1A raw jobs — upsert on job_url",
+                "pipeline_runs": "Per-run metadata and cost tracking",
+                "raw_social": "Social post storage (not actively used post-cleanup)",
+                "search_keywords": "25 active keywords with rotation counters",
+                "search_locations": "50 US states with times_used rotation"
+            }
+        }
+    }
+}

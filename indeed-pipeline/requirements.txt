@@ -1,0 +1,12 @@
+python-dotenv
+requests
+supabase>=2.0.0
+playwright
+google-genai
+google-auth
+google-auth-httplib2
+google-api-python-client
+aiohttp
+python-docx
+humancursor-playwright
+playwright-stealth
